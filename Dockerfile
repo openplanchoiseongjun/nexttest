@@ -3,7 +3,7 @@ FROM node:14 as base
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 RUN npm ci
 
